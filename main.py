@@ -1,3 +1,5 @@
+pip install langdetect==1.0.9
+
 import streamlit as st
 import pandas as pd
 from langdetect import detect, DetectorFactory,detect_langs
@@ -67,7 +69,6 @@ st.write("Counter:", st.session_state.counter)
 if st.button("Start Processing"):
     st.session_state.counter += 1
 
-st.write("Counter:", st.session_state.counter)
 
 
 # Step 2: Processing button
@@ -143,7 +144,6 @@ if st.session_state.counter > 0:
             asyncio.run(run_translate()) 
           
 
-            st.write("translated Data (Final Version):", edited_df)
           
             def detect_emotion(text):
                 result = emotion_classifier(text)
@@ -151,8 +151,8 @@ if st.session_state.counter > 0:
 
 
             edited_df[["Detected_Emotion", "Emotion_Score"]] = edited_df["Translated_Sentence"].astype(str).apply(detect_emotion).apply(pd.Series)
+            st.write("Result:", edited_df)
             
-            st.write("Committed Data (Final Version):", edited_df)
             st.download_button(
                 label="Download CSV",
                 data=edited_df.to_csv(index=False),

@@ -1,6 +1,6 @@
 streamlit
 pandas==2.2.2
-langdetect
+
 asyncio 
 nest_asyncio==1.6.0
 googletrans==4.0.2
