@@ -64,7 +64,6 @@ elif input_method == "Use Example":
     
     st.write("Sample Data:", text_data)
  
-st.write("Counter:", st.session_state.counter)
 if st.button("Start Processing"):
     st.session_state.counter += 1
 
@@ -138,7 +137,6 @@ if st.session_state.counter > 0:
             
             async def run_translate():
                 await translate_dataframe(edited_df)  # Ensure translation is done before proceeding
-                st.write("Translated Data (Final Version):", edited_df)
                 
             asyncio.run(run_translate()) 
           
