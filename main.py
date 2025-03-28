@@ -14,7 +14,7 @@ import json
 
 
 nest_asyncio.apply()
-emotion_classifier = pipeline("text-classification", model="bhadresh-savani/distilbert-base-uncased-emotion")
+#emotion_classifier = pipeline("text-classification", model="bhadresh-savani/distilbert-base-uncased-emotion")
 translator = Translator()
 
 # Ensure consistent language detection
@@ -144,12 +144,12 @@ if st.session_state.counter > 0:
           
 
           
-            def detect_emotion(text):
-                result = emotion_classifier(text)
-                return result[0]['label'],result[0]['score']  # Return the detected emotion label
+            # def detect_emotion(text):
+            #     result = emotion_classifier(text)
+            #     return result[0]['label'],result[0]['score']  # Return the detected emotion label
 
 
-            edited_df[["Detected_Emotion", "Emotion_Score"]] = edited_df["Translated_Sentence"].astype(str).apply(detect_emotion).apply(pd.Series)
+            # edited_df[["Detected_Emotion", "Emotion_Score"]] = edited_df["Translated_Sentence"].astype(str).apply(detect_emotion).apply(pd.Series)
             st.write("Result:", edited_df)
             
             st.download_button(
