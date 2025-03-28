@@ -1,10 +1,10 @@
 
 import streamlit as st
 import pandas as pd
-from langdetect import detect, DetectorFactory,detect_langs
 import asyncio 
 
 import nest_asyncio
+from langdetect import detect, DetectorFactory,detect_langs
 
 from googletrans import Translator
 import os
