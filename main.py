@@ -1,4 +1,3 @@
-pip install langdetect==1.0.9
 
 import streamlit as st
 import pandas as pd
