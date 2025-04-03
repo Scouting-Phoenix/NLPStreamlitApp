@@ -6,6 +6,6 @@ torch==2.5.1+cpu
 asyncio==1.6.0
 nest_asyncio==1.6.0
 googletrans==4.0.2
-
+tf-keras==2.19.0
 transformers==4.48.1
 

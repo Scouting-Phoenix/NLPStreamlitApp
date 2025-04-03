@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import asyncio 
-
+pip install tf-keras
 import nest_asyncio
 from langdetect import detect, DetectorFactory,detect_langs
 
