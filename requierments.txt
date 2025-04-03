@@ -1,9 +1,6 @@
 
  pandas==2.2.2
- langdetect==1.0.9
- TensorFlow==2.19.0
- tensorflow  
- torch   
+ langdetect==1.0.9 
  asyncio 
  nest_asyncio==1.6.0
  googletrans==4.0.2
