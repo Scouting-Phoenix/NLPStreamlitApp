@@ -15,7 +15,6 @@ from langdetect import detect, DetectorFactory,detect_langs
 
 from googletrans import Translator
 import os
-import torch
 from transformers import pipeline
 import json
 
