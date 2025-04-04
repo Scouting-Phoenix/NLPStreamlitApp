@@ -1,7 +1,7 @@
 streamlit==1.44.1
 pandas==2.2.2
 nest_asyncio==1.6.0
-TensorFlow==2.0
+TensorFlow==2.16.2
 langdetect==1.0.9
 transformers==4.48.1
 googletrans==4.0.2
