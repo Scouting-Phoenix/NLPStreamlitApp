@@ -1,8 +1,3 @@
-import subprocess
-import sys
-
-# Ensure nest_asyncio is installed at runtime
-subprocess.check_call([sys.executable, "-m", "pip", "install", "nest_asyncio"])
 
 import streamlit as st
 import pandas as pd
