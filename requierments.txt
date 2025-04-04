@@ -1,5 +1,6 @@
 pandas==2.2.2
-langdetect==1.0.9
 asyncio==3.4.3 
 nest_asyncio==1.6.0
+langdetect==1.0.9
+
 googletrans==4.0.2
