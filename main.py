@@ -8,7 +8,7 @@ from langdetect import detect, DetectorFactory,detect_langs
 
 from googletrans import Translator
 import os
-from transformers import pipeline
+#from transformers import pipeline
 import json
 
 
